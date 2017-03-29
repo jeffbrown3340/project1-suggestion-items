@@ -2,38 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
-    <title>Plug-and-Play Local Search Map</title>
-    <!-- "https://maps.google.com/maps?file=api&v=2&key=your key here" (JLB throws v2 error, chg to v3, obtained GM key) -->
-    <!-- 3-29-2017 GM KEY = AIzaSyDJeRNeoJlxyV7NFd0vjocmBodXNztqG_U -->
-    <!-- "https://maps.google.com/maps?file=api&v=2&key=AIzaSyDJeRNeoJlxyV7NFd0vjocmBodXNztqG_U" -->
-    <script src="https://maps.google.com/maps?file=api&v=3&key=AIzaSyDJeRNeoJlxyV7NFd0vjocmBodXNztqG_U" type="text/javascript"></script>
-    <style type="text/css">
-    div#map-canvas {
-        width: 500px;
-        height: 300px;
-    }
-    </style>
-    <script type="text/javascript">
-    var map = null;
-
-    function initialize() {
-        if (GBrowserIsCompatible()) {
-        	// create a center for our map (JLB 3-29-17 changed lat/long to BCC Downtown FtLaud)
-        	point = new GLatLng(26.119410, -80.141943);
-        	// create a new map.
-        	map = new GMap2(document.getElementById("map-canvas"));
-        	// set the center 
-        	map.setCenter(point, 15, G_NORMAL_MAP); 
-        	// add a zoom control 
-        	// map.addControl(new GSmallZoomControl()); // JLB throwing error, removed, addControl() deprecated GM v3
-        } 
-    }
-    </script>
+    <title>Group 3 Project 1 Suggestions</title>
 </head>
 
-<body onload="initialize()" onunload="GUnload()">
-    <h1>Plug-and-Play Local Search Map</h1>
-    <div id="map-canvas"></div>
+<body>
+    <a href="googleMaps.html" />GoogleMaps
 </body>
 
 </html>
